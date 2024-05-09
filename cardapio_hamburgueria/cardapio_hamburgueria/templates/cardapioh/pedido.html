@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fazer Pedido</title>
+    </head>
+    <body>
+        <h1>Fazer Pedido</h1>
+        <form method="post">
+            {% csrf_token %}
+            <textarea name="observacoes" placeholder="Observações"></textarea><br>
+            <input type="submit" value="Enviar Pedido">
+        </form>
+    </body>
+    
+</html>
